@@ -10,17 +10,19 @@
 
 <body style="margin:0px; background-image:url(images/bgtypec4.png); background-repeat: no-repeat; background-size: cover;">
     <div style="position: absolute;width:100%;">
-        <p style="padding-left: 10px; text-align: center;margin-top: 45%;width: 17rem; word-wrap: break-word;">fafdsafadfkjalkdjflkajflkadjklfjadkljfkaljsdf</p>
+        <p id="question" style="padding-left: 10px; text-align: center;margin-top: 45%;width: 17rem; word-wrap: break-word;">fafdsafadfkjalkdjflkajflkadjklfjadkljfkaljsdf</p>
     </div>
     <!--<div>
         <img src="images/bgtypec4.png" style="display:block; width:100%; height:100%;">
     </div>-->
-    <div style="position: absolute; width: 100%; bottom: 35px;text-align: center;">
-        <p style="display:flex;"><span style="flex: 1;">Option 1</span><span style="flex: 1;">Option 2</span></p>
-
+    <div id="line_one" style="display:flex;position: absolute; width: 100%; bottom: 45px;text-align: center;">
+        <button id="option_one" style="flex: 1;">Option 1</button><button id="option_two" style="flex: 1;">Option 2</button>
     </div>
-    <div style="position: absolute; width: 100%; bottom: 0px;text-align: center;">
-        <p style="display:flex;"><span style="flex: 1;">Option 3</span><span style="flex: 1;">Option 4</span></p>
+    <div id="end_of_card" style="display:flex;position: absolute; width: 100%; height: 95px; bottom: 20px;text-align: center;background-color: rgb(244,78,61);visibility: hidden;">
+        <p style="width:100%;">Thanks for your help!</p>
+    </div>
+    <div id="line_two" style="display:flex;position: absolute; width: 100%; bottom: 15px;text-align: center;">
+        <button id="option_three" style="flex: 1;">Option 3</button><button id="option_four" style="flex: 1;">Option 4</button>
     </div>
     <!-- Google Analytics -->
     <script>
@@ -40,6 +42,7 @@
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
+    <script src="./sample.js"></script>
     <script src="js/main.js"></script>
 </body>
 

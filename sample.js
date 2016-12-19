@@ -1,7 +1,8 @@
 var input = {
     cardType: 1,
-    pageData = [{
+    pageData: [{
             question: "Are you maik?",
+            //options: ["yes", "no", "IDK", "!!"]
             options: ["yes", "no"]
         }, {
             question: "Who the hell are you?",
