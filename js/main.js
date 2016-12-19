@@ -31,8 +31,8 @@ function sendEvent() {
     ga('send', {
         hitType: 'event',
         eventCategory: 'Q and A',
-        eventAction: question.innerHTML,
-        eventLabel: this.innerHTML
+        eventAction: "" + question.innerHTML + " - " + this.innerHTML,
+        eventLabel: question.innerHTML
     });
     if (DBG) console.log("Get Click Event: Question ", question.innerHTML, "Answer ", this.innerHTML);
     if(index+1 < numberOfCards ) {
