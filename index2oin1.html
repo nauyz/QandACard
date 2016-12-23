@@ -64,24 +64,21 @@
 
     //<!-- End Google Analytics -->
     var input = {
-        pageData: [{
-            question: "How would you rate [BRAND/PRODUCT] in terms of [ATTRIBUTE]?",
+        pageData: [
+        {
+            question: "Do you remember any of the ads you’ve seen here before?",
+            options: ["Very High", "Well", "Kind of", "Not really", "Not at all"]
+        },
+        {
+            question: "How do you view the brands advertised?",
             //options: ["yes", "no", "IDK", "!!"]
-            options: ["Very High", "High", "Average", "Low", "Very Low"]
-        }, {
-            question: "Which of the following [PRODUCT/SERVICE] have you heard of?",
-            //options: ["yes", "no", "IDK", "!!"]
-            options: ["Brand being advertised", "Competitive Brand 1", "Competitive Brand 2", "Competitive Brand 3", "Competitve Brand 4"]
-        }, {
-            question: "How do you view [BRAND/PRODUCT]?",
             options: ["Very Favorably", "Favorably", "Neutral", "Unfavorably", "Very Unfavorably"]
-        }, {
-            question: "How likely are you to [SOME ACTION] [BRAND/PRODUCT] in the next [X MONTHS]?",
-            options: ["Definitely will", "Probably will", "May or may not", "Probably will not", "Definitely will not"]
-        }, {
-            question: "Among the following [PRODUCT/SERVICE], which one do you prefer most?",
-            options: ["Brand being advertised", "Competitive Brand 1", "Competitive Brand 2", "Competitive Brand 3", "Competitive Brand 4"]
-        }]
+        },
+        {
+            question: "How likely are you to buy a product shown here in the next 2 months?",
+            options: ["Definitely will","Probably will", "May or may not", "Probably will not", "Definitely will not"]
+        }
+        ]
     }
 
     console.log("@ START ");
